@@ -1,0 +1,79 @@
+<style>
+  .stock-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #000;
+    padding: 15px;
+    margin-top: 15px;
+    font-family: Arial, sans-serif;
+  }
+
+  .stock-info {
+    flex: 2;
+  }
+
+  .stock-info h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .stock-info p {
+    margin: 4px 0;
+    font-size: 16px;
+  }
+
+  .stock-actions {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+
+  .stock-actions input[type="number"] {
+    width: 100px;
+    padding: 5px;
+    font-size: 16px;
+  }
+
+  .stock-actions button {
+    width: 80px;
+    padding: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid black;
+  }
+
+  .stock-actions .buy-btn {
+    background: #e9ffe9;
+    color: green;
+    font-weight: bold;
+  }
+
+  .stock-actions .sell-btn {
+    background: #ffe9e9;
+    color: red;
+    font-weight: bold;
+  }
+
+  .stock-total {
+    font-size: 18px;
+    font-weight: bold;
+  }
+</style>
+
+<div class="stock-container">
+  <div class="stock-info">
+    <h2>APPLE INC.</h2>
+    <p><b>AAPL</b></p>
+    <p>$13.32 &nbsp;&nbsp; %-0.34</p>
+  </div>
+  <div class="stock-actions">
+    <input type="number" step="1" value="134" id="amount_AAPL">
+    <div class="stock-total">$1572.33</div>
+    <button class="buy-btn">Buy</button>
+    <button class="sell-btn">Sell</button>
+  </div>
+</div>

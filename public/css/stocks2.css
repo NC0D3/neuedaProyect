@@ -1,0 +1,174 @@
+ /* Fondo general con el mismo estilo del login */
+ body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(180deg, #4a00e0, #8e2de2) no-repeat;
+    background-size: auto 100%;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+/* Barra superior */
+.top-bar {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background: #ffffff;
+    border-radius: 15px;
+  }
+  
+  /* Botón volver */
+  .back-btn {
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 14px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  .back-btn:hover {
+    background-color: #333;
+  }
+  
+  /* Texto Buscar algo */
+  .top-bar h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #4a00e0;
+  }
+  
+  /* Contenedor de búsqueda */
+  .search-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  #searchInput {
+    padding: 6px 10px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    width: 200px;
+  }
+  
+  #searchBtn {
+    background: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  #searchBtn:hover {
+    background: #005fa3;
+  }
+  
+  /* Dinero del usuario */
+  #user_money {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  #searchContainer{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  /* Contenedor principal de cada stock */
+  .stock-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    color: #333;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px 0;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .stock-container:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Info del stock (lado izquierdo) */
+  .stock-info h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #4a00e0;
+  }
+  
+  .stock-info p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  /* Acciones (lado derecho) */
+  .stock-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .stock-actions input {
+    width: 70px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .stock-total {
+    font-weight: bold;
+    color: #4a00e0;
+    font-size: 16px;
+  }
+  
+  /* Botón comprar */
+  .stock-actions button:nth-of-type(1) {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+  }
+  
+  .stock-actions button:nth-of-type(1):hover {
+    background: #218838;
+  }
+  
+  /* Botón vender */
+  .stock-actions button:nth-of-type(2) {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+  }
+  
+  .stock-actions button:nth-of-type(2):hover {
+    background: #c82333;
+  }
